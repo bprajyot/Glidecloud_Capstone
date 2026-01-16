@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pymongo
+motor
+pydantic
+pydantic-settings
+python-dotenv
+httpx
+ollama

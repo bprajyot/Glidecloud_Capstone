@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/TQnN6bqI3CNe55TnVb6NVZHK/TA</id>
+  <title>arXiv Query: search_query=all:bio&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <updated>2026-01-16T04:15:44Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:bio&amp;start=0&amp;max_results=10&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>56892</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1002.1184v1</id>
+    <title>Implementation of an Innovative Bio Inspired GA and PSO Algorithm for Controller design considering Steam GT Dynamics</title>
+    <updated>2010-02-05T10:27:13Z</updated>
+    <link href="https://arxiv.org/abs/1002.1184v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1002.1184v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  The Application of Bio Inspired Algorithms to complicated Power System Stability Problems has recently attracted the researchers in the field of Artificial Intelligence. Low frequency oscillations after a disturbance in a Power system, if not sufficiently damped, can drive the system unstable. This paper provides a systematic procedure to damp the low frequency oscillations based on Bio Inspired Genetic (GA) and Particle Swarm Optimization (PSO) algorithms. The proposed controller design is based on formulating a System Damping ratio enhancement based Optimization criterion to compute the optimal controller parameters for better stability. The Novel and contrasting feature of this work is the mathematical modeling and simulation of the Synchronous generator model including the Steam Governor Turbine (GT) dynamics. To show the robustness of the proposed controller, Non linear Time domain simulations have been carried out under various system operating conditions. Also, a detailed Comparative study has been done to show the superiority of the Bio inspired algorithm based controllers over the Conventional Lead lag controller.</summary>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2010-02-05T10:27:13Z</published>
+    <arxiv:comment>International Journal of Computer Science Issues, IJCSI, Vol. 7, Issue 1, No. 3, January 2010, http://ijcsi.org/articles/Implementation-of-an-Innovative-Bio-Inspired-GA-and-PSO-Algorithm-for-Controller-design-considering-Steam-GT-Dynamics.php</arxiv:comment>
+    <arxiv:primary_category term="cs.NE"/>
+    <arxiv:journal_ref>International Journal of Computer Science Issues, IJCSI, Vol. 7, Issue 1, No. 3, January 2010, http://ijcsi.org/articles/Implementation-of-an-Innovative-Bio-Inspired-GA-and-PSO-Algorithm-for-Controller-design-considering-Steam-GT-Dynamics.php</arxiv:journal_ref>
+    <author>
+      <name>R. Shivakumar</name>
+    </author>
+    <author>
+      <name>R. Lakshmipathi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1107.4486v1</id>
+    <title>Interstitial BiO molecule as a center of broadband IR luminescence in bismuth-doped silica glass</title>
+    <updated>2011-07-22T11:38:52Z</updated>
+    <link href="https://arxiv.org/abs/1107.4486v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1107.4486v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>IR luminescence and absorption in bismuth-doped silica glass-core fibers observed recently (see [arXiv:1106.2969v1 [physics.optics]) are argued to be caused by transitions in interstitial BiO molecules</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-07-22T11:38:52Z</published>
+    <arxiv:comment>4 pages, 3 figures, 8 references</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <arxiv:journal_ref>V.O.Sokolov, V.G.Plotnichenko, E.M.Dianov, "Interstitial BiO molecule as a broadband IR luminescence centre in bismuth-doped silica glass", Quantum Electron., 2011, 41 (12), 1080-1082</arxiv:journal_ref>
+    <author>
+      <name>V. O. Sokolov</name>
+    </author>
+    <author>
+      <name>V. G. Plotnichenko</name>
+    </author>
+    <author>
+      <name>E. M. Dianov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.14361v1</id>
+    <title>Criticality Analysis: Bio-inspired Nonlinear Data Representation</title>
+    <updated>2023-05-11T19:02:09Z</updated>
+    <link href="https://arxiv.org/abs/2305.14361v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.14361v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The representation of arbitrary data in a biological system is one of the most elusive elements of biological information processing. The often logarithmic nature of information in amplitude and frequency presented to biosystems prevents simple encapsulation of the information contained in the input. Criticality Analysis (CA) is a bio-inspired method of information representation within a controlled self-organised critical system that allows scale-free representation. This is based on the concept of a reservoir of dynamic behaviour in which self-similar data will create dynamic nonlinear representations. This unique projection of data preserves the similarity of data within a multidimensional neighbourhood. The input can be reduced dimensionally to a projection output that retains the features of the overall data, yet has much simpler dynamic response. The method depends only on the rate control of chaos applied to the underlying controlled models, that allows the encoding of arbitrary data, and promises optimal encoding of data given biological relevant networks of oscillators. The CA method allows for a biologically relevant encoding mechanism of arbitrary input to biosystems, creating a suitable model for information processing in varying complexity of organisms and scale-free data representation for machine learning.</summary>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-11T19:02:09Z</published>
+    <arxiv:comment>To be submitted</arxiv:comment>
+    <arxiv:primary_category term="q-bio.NC"/>
+    <arxiv:journal_ref>Scheper, T. V. olde. Criticality Analysis: Bio-Inspired Nonlinear Data Representation. Entropy (2023)</arxiv:journal_ref>
+    <author>
+      <name>Tjeerd V. olde Scheper</name>
+    </author>
+    <arxiv:doi>10.3390/e25121660</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/e25121660" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1403.7795v1</id>
+    <title>Bio-Inspired Computation: Success and Challenges of IJBIC</title>
+    <updated>2014-03-30T18:26:05Z</updated>
+    <link href="https://arxiv.org/abs/1403.7795v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1403.7795v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>It is now five years since the launch of the International Journal of Bio-Inspired Computation (IJBIC). At the same time, significant new progress has been made in the area of bio-inspired computation. This review paper summarizes the success and achievements of IJBIC in the past five years, and also highlights the challenges and key issues for further research.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-03-30T18:26:05Z</published>
+    <arxiv:comment>11</arxiv:comment>
+    <arxiv:primary_category term="math.OC"/>
+    <arxiv:journal_ref>Int. J. Bio-Inspired Computation, Vol.6, No.1, pp.1-6 (2014)</arxiv:journal_ref>
+    <author>
+      <name>Xin-She Yang</name>
+    </author>
+    <author>
+      <name>Zhihua Cui</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2103.04283v1</id>
+    <title>Bio-JOIE: Joint Representation Learning of Biological Knowledge Bases</title>
+    <updated>2021-03-07T07:06:53Z</updated>
+    <link href="https://arxiv.org/abs/2103.04283v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2103.04283v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The widespread of Coronavirus has led to a worldwide pandemic with a high mortality rate. Currently, the knowledge accumulated from different studies about this virus is very limited. Leveraging a wide-range of biological knowledge, such as gene ontology and protein-protein interaction (PPI) networks from other closely related species presents a vital approach to infer the molecular impact of a new species. In this paper, we propose the transferred multi-relational embedding model Bio-JOIE to capture the knowledge of gene ontology and PPI networks, which demonstrates superb capability in modeling the SARS-CoV-2-human protein interactions. Bio-JOIE jointly trains two model components. The knowledge model encodes the relational facts from the protein and GO domains into separated embedding spaces, using a hierarchy-aware encoding technique employed for the GO terms. On top of that, the transfer model learns a non-linear transformation to transfer the knowledge of PPIs and gene ontology annotations across their embedding spaces. By leveraging only structured knowledge, Bio-JOIE significantly outperforms existing state-of-the-art methods in PPI type prediction on multiple species. Furthermore, we also demonstrate the potential of leveraging the learned representations on clustering proteins with enzymatic function into enzyme commission families. Finally, we show that Bio-JOIE can accurately identify PPIs between the SARS-CoV-2 proteins and human proteins, providing valuable insights for advancing research on this new disease.</summary>
+    <category term="q-bio.MN" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-03-07T07:06:53Z</published>
+    <arxiv:comment>ACM BCB 2020, Best Student Paper</arxiv:comment>
+    <arxiv:primary_category term="q-bio.MN"/>
+    <arxiv:journal_ref>In Procs of the 11th ACM BCB, pp. 1-10. 2020</arxiv:journal_ref>
+    <author>
+      <name>Junheng Hao</name>
+    </author>
+    <author>
+      <name>Chelsea Ju</name>
+    </author>
+    <author>
+      <name>Muhao Chen</name>
+    </author>
+    <author>
+      <name>Yizhou Sun</name>
+    </author>
+    <author>
+      <name>Carlo Zaniolo</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <arxiv:doi>10.1145/3388440.3412477</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3388440.3412477" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/q-bio/0607043v2</id>
+    <title>Nestedness and degree distributions are necessarily linked in mutualist systems</title>
+    <updated>2007-01-19T12:05:04Z</updated>
+    <link href="https://arxiv.org/abs/q-bio/0607043v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/q-bio/0607043v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Replacement of papers q-bio/0605026 and q-bio/0607043 by a single manuscript (q-bio/0701029) follows suggestions from a magazine's referee</summary>
+    <category term="q-bio.PE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2006-07-24T19:33:41Z</published>
+    <arxiv:comment>This paper and q-bio/0605026 are replaced by q-bio/0701029</arxiv:comment>
+    <arxiv:primary_category term="q-bio.PE"/>
+    <author>
+      <name>Enrique Burgos</name>
+    </author>
+    <author>
+      <name>Horacio Ceva</name>
+    </author>
+    <author>
+      <name>Roberto P. J. Perazzo</name>
+    </author>
+    <author>
+      <name>Mariano Devoto</name>
+    </author>
+    <author>
+      <name>Diego Medan</name>
+    </author>
+    <author>
+      <name>Martin Zimmermann</name>
+    </author>
+    <author>
+      <name>Mariana Delbue</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.11256v1</id>
+    <title>Bio-Image Informatics Index BIII: A unique database of image analysis tools and workflows for and by the bioimaging community</title>
+    <updated>2023-12-18T14:53:38Z</updated>
+    <link href="https://arxiv.org/abs/2312.11256v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.11256v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bio image analysis has recently become one keystone of biological research but biologists tend to get lost in a plethora of available software and the way to adjust available tools to their own image analysis problem. We present BIII, BioImage Informatic Index (www.biii.eu), the result of the first large community effort to bridge the communities of algorithm and software developers, bioimage analysts and biologists, under the form of a web-based knowledge database crowdsourced by these communities. Software tools (&gt; 1300), image databases for benchmarking (&gt;20) and training materials (&gt;70) for bio image analysis are referenced and curated following standards constructed by the community and then reaching a broader audience. Software tools are organized as full protocol of analysis (workflow), specific brick (component) to construct a workflow, or software platform or library (collection). They are described using Edam Bio Imaging, which is iteratively defined using this website. All entries are exposed following FAIR principles and accessible for other usage.</summary>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-18T14:53:38Z</published>
+    <arxiv:comment>5 pages of main article including one figure and references, followed by the lis of taggers, the description of the ontologies in uses and some example of usage</arxiv:comment>
+    <arxiv:primary_category term="q-bio.QM"/>
+    <author>
+      <name>Chong Zhang</name>
+    </author>
+    <author>
+      <name>Alban Gaignard</name>
+    </author>
+    <author>
+      <name>Matus Kalas</name>
+    </author>
+    <author>
+      <name>Florian Levet</name>
+    </author>
+    <author>
+      <name>Felipe Delestro</name>
+    </author>
+    <author>
+      <name>Joakim Lindblad</name>
+    </author>
+    <author>
+      <name>Natasa Sladoje</name>
+    </author>
+    <author>
+      <name>Laure Plantard</name>
+    </author>
+    <author>
+      <name>Alain Latour</name>
+    </author>
+    <author>
+      <name>Robert Haase</name>
+    </author>
+    <author>
+      <name>Gabriel Martins</name>
+    </author>
+    <author>
+      <name>Paula Sampaio</name>
+    </author>
+    <author>
+      <name>Leandro Scholz</name>
+    </author>
+    <author>
+      <name>NEUBIAS taggers</name>
+    </author>
+    <author>
+      <name>Sébastien Tosi</name>
+    </author>
+    <author>
+      <name>Kota Miura</name>
+    </author>
+    <author>
+      <name>Julien Colombelli</name>
+    </author>
+    <author>
+      <name>Perrine Paul-Gilloteaux</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.17346v2</id>
+    <title>From Nano to Macro: Overview of the IEEE Bio Image and Signal Processing Technical Committee</title>
+    <updated>2023-01-23T11:14:26Z</updated>
+    <link href="https://arxiv.org/abs/2210.17346v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.17346v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Bio Image and Signal Processing (BISP) Technical Committee (TC) of the IEEE Signal Processing Society (SPS) promotes activities within the broad technical field of biomedical image and signal processing. Areas of interest include medical and biological imaging, digital pathology, molecular imaging, microscopy, and associated computational imaging, image analysis, and image-guided treatment, alongside physiological signal processing, computational biology, and bioinformatics. BISP has 40 members and covers a wide range of EDICS, including CIS-MI: Medical Imaging, BIO-MIA: Medical Image Analysis, BIO-BI: Biological Imaging, BIO: Biomedical Signal Processing, BIO-BCI: Brain/Human-Computer Interfaces, and BIO-INFR: Bioinformatics. BISP plays a central role in the organization of the IEEE International Symposium on Biomedical Imaging (ISBI) and contributes to the technical sessions at the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), and the IEEE International Conference on Image Processing (ICIP). In this paper, we provide a brief history of the TC, review the technological and methodological contributions its community delivered, and highlight promising new directions we anticipate.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-31T14:12:11Z</published>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Selin Aviyente</name>
+    </author>
+    <author>
+      <name>Alejandro Frangi</name>
+    </author>
+    <author>
+      <name>Erik Meijering</name>
+    </author>
+    <author>
+      <name>Arrate Muñoz-Barrutia</name>
+    </author>
+    <author>
+      <name>Michael Liebling</name>
+    </author>
+    <author>
+      <name>Dimitri Van De Ville</name>
+    </author>
+    <author>
+      <name>Jean-Christophe Olivo-Marin</name>
+    </author>
+    <author>
+      <name>Jelena Kovačević</name>
+    </author>
+    <author>
+      <name>Michael Unser</name>
+    </author>
+    <arxiv:doi>10.1109/MSP.2023.3242833</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/MSP.2023.3242833" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0806.0449v2</id>
+    <title>Anapedesis: Implications and Applications of Bio-Structural Robustness</title>
+    <updated>2008-06-03T23:09:43Z</updated>
+    <link href="https://arxiv.org/abs/0806.0449v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0806.0449v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Here we develop an approach to bio-structural robustness integrated with structure-function relationship in a unified conceptual and methodological framework, and envision its study using adequate computational and experimental methods. To distinguish this structural robustness from the abstract organizational robustness of systems, we call it anapedesis, and define it as the scale-independent property of biological objects, from biomolecules to organisms, to deform and recover while minimizing and/or repairing the damage produced by stretch. We propose to study the consequences of deformation of biological objects closer to their structural and/or functional failure than previously considered relevant. We show that structural robustness is present as a basic principle in many facets of biomedicine: many pathological conditions may derive from the failure of molecules, cells and their higher-order assemblies to maintain robustness against deformation. Furthermore, structural robustness could have been the key selective criterion during pre-biotic evolution and afterwards, and its universality can be demonstrated by modeling using genetic algorithms. Thus, the specific investigation of bio-structural robustness as anapedesis could help the solving of fundamental problems of biology and medicine.</summary>
+    <category term="q-bio.OT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.CB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2008-06-03T07:05:02Z</published>
+    <arxiv:primary_category term="q-bio.OT"/>
+    <author>
+      <name>Nicanor I. Moldovan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/q-bio/0605026v2</id>
+    <title>Nestedness in mutualistic networks emerges from a modified rule of preferential attachment</title>
+    <updated>2007-01-19T12:02:18Z</updated>
+    <link href="https://arxiv.org/abs/q-bio/0605026v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/q-bio/0605026v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Replacement of papers q-bio/0605026 and q-bio/0607043 by a single manuscript (q-bio/0701029) follows suggestions from a magazine's referee</summary>
+    <category term="q-bio.PE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2006-05-17T12:36:35Z</published>
+    <arxiv:comment>This paper, together with paper q-bio/0607043 are replaced by q-bio/0607043</arxiv:comment>
+    <arxiv:primary_category term="q-bio.PE"/>
+    <author>
+      <name>Diego Medan</name>
+    </author>
+    <author>
+      <name>Roberto P. J. Perazzo</name>
+    </author>
+    <author>
+      <name>Mariano Devoto</name>
+    </author>
+    <author>
+      <name>Martin Zimmermann</name>
+    </author>
+    <author>
+      <name>Horacio Ceva</name>
+    </author>
+    <author>
+      <name>Enrique Burgos</name>
+    </author>
+    <author>
+      <name>Ana M. Delbue</name>
+    </author>
+  </entry>
+</feed>
