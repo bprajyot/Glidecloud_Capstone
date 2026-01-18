@@ -1,174 +1,131 @@
-# Medical Case Assistant
+# Medical Case Assistant  
+---
 
-A simple, Retrieval Augmented Generation (RAG) system for medical research assistance using arXiv papers.
+## Overview
+
+The **Medical Case Assistant** is a research-oriented system designed to support the exploration of medical and biomedical literature using a **Retrieval-Augmented Generation (RAG)** framework. The system retrieves relevant research papers from **arXiv** and generates answers grounded in those sources using large language models.
 
 ---
 
-## 📚 What This Does
+## Screenshots
 
-This system helps researchers explore medical and biomedical literature by:
+### Web Interface (Streamlit)
+![Home Page](screenshots/home_page.png)
 
-1. **Fetching** papers from arXiv
-2. **Chunking** abstracts into smaller pieces
-3. **Embedding** chunks using semantic vectors
-4. **Storing** everything in MongoDB with vector search
-5. **Retrieving** relevant research for your questions
-6. **Generating** grounded answers with proper citations
+### Query Response
+![Ingestion Progress](screenshots/query_answer.png)
 
----
-
-## 🏗️ Architecture
-
-```
-┌──────────────────────────────────────────────────────┐
-│                    USER QUERY                        │
-│   "What mechanisms drive autophagy in cancer?"       │
-└────────────────────┬─────────────────────────────────┘
-                     │
-                     ▼
-┌────────────────────────────────────────────────────────┐
-│              RETRIEVAL (Vector Search)                 │
-│  • Convert query to embedding                          │
-│  • Search MongoDB for similar chunks                   │
-│  • Return top-K most relevant papers                   │
-└────────────────────┬───────────────────────────────────┘
-                     │
-                     ▼
-┌────────────────────────────────────────────────────────┐
-│              GENERATION (LLM)                          │
-│  • Take retrieved research                             │
-│  • Generate grounded answer                            │
-│  • Include arXiv citations                             │
-└────────────────────┬───────────────────────────────────┘
-                     │
-                     ▼
-┌────────────────────────────────────────────────────────┐
-│         ANSWER WITH CITATIONS                          │
-│  "Based on research literature, autophagy..."          │
-│  References: [arXiv:2301.12345, ...]                   │
-└────────────────────────────────────────────────────────┘
-```
+### Literature Reference List
+![Swagger UI](screenshots/literature_references.png)
 
 ---
 
-## 📂 Project Structure
+## System Functionality
 
-```
-medical-rag/
-│
-├── app/
-│   ├── main.py                    
-│   │
-│   ├── core/
-│   │   ├── config.py              
-│   │   └── logger.py              
-│   │
-│   ├── models/
-│   │   └── schemas.py             
-│   │
-│   ├── db/
-│   │   └── database.py            
-│   │
-│   ├── services/                  
-│   │   ├── paper.py       
-│   │   ├── embedding_service.py   
-│   │   ├── retrieval_service.py   
-│   │   └── generation_service.py  
-│   │
-│   ├── api/routes/
-│   │   ├── ingest.py              
-│   │   └── query.py               
-│   │
-│   └── utils/
-│       └── text_utils.py                       
-│
-├── requirements.txt
-├── .env
-├── README.md
-└── sample_xml.xml              # contains sample response from arXiv
-```
+The system performs the following steps:
 
-**Why this structure?**
-- **`core/`**: Configuration and logging
-- **`services/`**: Each service does ONE thing
-- **`api/routes/`**: API endpoints separated by function
-- **`utils/`**: Helper functions used across the app
+1. Retrieves biomedical research papers from arXiv (q-bio categories)
+2. Splits abstracts into smaller text segments
+3. Converts text segments into semantic embeddings
+4. Stores embeddings in a vector-enabled database
+5. Retrieves relevant literature for a user query
+6. Generates an answer grounded in retrieved sources with citations
+
+All generated responses reference the original arXiv papers used.
 
 ---
 
-## 🚀 Setup Instructions
+## Architecture Overview
 
-### 1. Prerequisites
+User Query
+↓
+Vector Retrieval (MongoDB Atlas)
+↓
+Relevant Research Chunks
+↓
+LLM-Based Answer Generation
+↓
+Answer with Citations
 
-- **Python 3.10+**
-- **Ollama** installed ([https://ollama.ai](https://ollama.ai))
-- **MongoDB Atlas** account (free tier works!)
 
-### 2. Install Ollama Models
+### Main Components
 
-```bash
-# Install Ollama first, then pull models
-ollama pull llama3.2
-ollama pull mxbai-embed-large
-```
+- **Frontend (optional)**: Streamlit web interface
+- **Backend**: FastAPI application
+- **Data Source**: arXiv API
+- **Embeddings**: `mxbai-embed-large` (via Ollama)
+- **Language Model**: `llama3.2` (via Ollama)
+- **Database**: MongoDB Atlas with vector search
 
-### 3. Setup MongoDB Atlas Vector Search
+---
 
-1. Create a MongoDB Atlas account
-2. Create a new cluster (free M0 tier is fine)
-3. Create database: `medical_rag`
-4. Create collection: `papers`
-5. **IMPORTANT**: Create a Vector Search Index
+## Usage Modes
 
-Go to "Atlas Search" → "Create Search Index" → "JSON Editor" and paste:
+### 1. Streamlit Web Interface
+- Interactive ingestion and querying
+- Visual feedback and citation display
+- Suitable for learning and demonstrations
 
-```json
-{
-  "fields": [
-    {
-      "type": "vector",
-      "path": "embedding",
-      "numDimensions": 1024,
-      "similarity": "cosine"
-    }
-  ]
-}
-```
+### 2. REST API (FastAPI)
+- Programmatic access to ingestion and querying
+- Suitable for automation and integration
+- Interactive documentation via Swagger UI   
 
-Name it: `vector_index`
+---
 
-### 4. Clone and Setup Project
+## Data Ingestion
 
-```bash
-# Clone repository
-git clone https://github.com/bprajyot/Glidecloud_Capstone.git
-cd medical-rag
+During ingestion, the system:
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+- Fetches papers from arXiv
+- Cleans and chunks abstracts
+- Generates semantic embeddings
+- Stores embeddings and metadata in MongoDB
 
-# Install dependencies
-pip install -r requirements.txt
+Ingestion can be initiated via:
+- Streamlit UI
+- REST API endpoint
 
-# Setup environment variables
-cp .env
-# Edit .env with your MongoDB URI
-```
+---
 
-### 5. Ingest Data
-- hit the ingest/paper end point on swagger ui
+## Querying the System
 
-This will take several minutes! The script:
-- Fetches 50 papers from arXiv
-- Cleans and chunks each abstract
-- Generates embeddings for each chunk
-- Stores everything in MongoDB
+Users submit a natural-language research question, for example:
 
-### 6. Run the API
+> *What are the mechanisms of circadian rhythm regulation?*
 
-```bash
-uvicorn app.main:app --reload
-```
+The system returns:
+- A synthesized answer
+- A list of cited arXiv papers
+- Relevance scores for retrieved documents
 
-Visit: http://localhost:8000/docs for interactive API documentation
+---
+
+## Example Research Questions
+
+- How are Genetic Algorithms (GA) and Particle Swarm Optimization (PSO) applied to controller design?
+- Which papers focus on optimization, and which focus on representation learning?
+- What trends can be observed in the application of bio-inspired techniques over time?
+- What common principles of biological inspiration appear across these papers?
+
+---
+
+## Configuration
+
+System parameters are defined in the `.env` file, including:
+
+- Text chunk size and overlap
+- Number of retrieved documents
+- Similarity score threshold
+- Model configuration
+
+These parameters enable experimentation and evaluation of retrieval performance.
+
+---
+
+## Key Features
+
+- Retrieval-Augmented Generation (RAG)
+- Semantic vector search
+- Citation-backed responses
+- Modular, readable codebase
